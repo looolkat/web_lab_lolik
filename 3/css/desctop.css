@@ -1,0 +1,54 @@
+@media screen and (min-width: 1280px) {
+    body{
+        padding: 40px;
+    }
+
+    .lg{
+        width: 300px;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .main-catalog{
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .main-catalog h4{
+        font-size: 32px;
+    }
+    .main-catalog>.iteam{
+        width: 32%;
+    }
+
+    .promo-catalog{
+        gap: 20px;
+    
+    }
+
+    .promo-catalog h4{
+        font-size: 25px;
+    }
+    .promo-catalog>h2{
+        width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .promo-catalog .iteam{
+        width: 24%;
+    }
+}

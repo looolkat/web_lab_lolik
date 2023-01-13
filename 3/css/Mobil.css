@@ -1,0 +1,97 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body{
+	padding: 12px;
+}
+
+.lg{
+	width: 100%;
+	cursor: pointer;
+}
+
+header ul{
+	margin: 20px 0;
+	display: flex;
+	gap: 40px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+}
+
+a:hover{
+	border: none;
+}
+
+
+.iteam{
+	width: 100%;
+	background: rgb(243, 245, 254);
+	border: 1px solid;
+	border-color: rgba(24, 23, 22, 0.13);
+	border-radius: 16px;
+}
+.iteam:hover>img{
+	opacity: .4;
+}
+
+img{
+	width: 100%;
+	height: 80%;
+}
+.text{
+	padding: 12px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.iteam h4{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: black;
+}
+
+.main-catalog{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.promo-catalog h2{
+	margin: 20px 0;
+	font-size: 28px;
+	line-height: 30px;
+}
+
+.promo-catalog{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 12px;
+
+}
+
+.promo-catalog .iteam{
+	width: 47%;
+}
