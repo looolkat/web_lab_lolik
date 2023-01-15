@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/Registration.css">
+    <title>Blog / Registration</title>
+</head>
+<body>
+    <header>
+        <div class="lg">
+            <img src="./materials/design/logo.svg" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="#" class="link-head">
+                    <img src="./materials/design/i-user.svg" alt="">
+                    <span>Войти</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">Зарегистрироваться</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1>Регистрация</h1>
+        <form action="" method="post" class="regForm">
+            <div class="fio-row">
+                <label for="name">
+                    Имя
+                    <input type="text" id="name">
+                </label>
+                <label for="last-name">
+                    Фимилия
+                    <input type="text" id="last-name">
+                </label>
+            </div>
+            <div class="logEmail-row">
+                <label for="log">
+                    Логин*
+                    <input type="text" id="log" required>
+                    <div class="error">
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Только буквы, цифры и символы @.+-_
+                        </div>
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Не более 150 символов
+                        </div>
+                    </div>
+                </label>
+                <label for="Email">
+                    E-mail
+                    <input type="email" id="Email">
+                </label>
+            </div>
+            <div class="password-row">
+                <label for="password1">
+                    Пароль *
+                    <input type="password" id="password1">
+                    <div class="error">
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Минимум 8 символов
+                        </div>
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Не может состоять только из цифр
+                        </div>
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Не должен совпадать с логином
+                        </div>
+                        <div class="error_iteam">
+                            <img src="./materials/design/State Icons.svg" alt="">
+                            Не должен быть в базе популярных паролей
+                        </div>
+                    </div>
+                </label>
+                <label for="password2" class="last-pass">
+                    Подтверждение пароля *
+                    <input type="password" id="password2" class="password2 no">
+                    <div class="error">
+                        <div class="error_iteam no">
+                            <img src="./materials/design/State Icons2.svg" alt="">
+                            Пароли не совпадают
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <label for="check" class="checkbox">
+                <input type="checkbox" id="check" checked>
+                Даю своё согласие на обработку персональных данных
+            </label>
+            <input class="btn-submit" type="submit" value="Зарегистрироваться">
+        </form>
+    </main>
+    <footer>
+        <ul class="categories-list">
+            <li class="link"><a href="#">Об авторе</a></li>
+            <li class="link"><a href="#">Технологии</a></li>
+        </ul>
+        <span>
+            © Blog, 2022
+        </span>
+    </footer>
+    <script>
+        let check = document.querySelector("#check");
+        let button = document.querySelector(".btn-submit") 
+        if(check.checked){
+            button.removeAttribute("disabled", "");
+        }else{
+            button.setAttribute("disabled", "");
+        }
+
+        check.onchange = function(){
+        if(check.checked){
+            button.removeAttribute("disabled", "");
+        }else{
+            button.setAttribute("disabled", "");
+        }
+        };
+
+    </script>    
+    <script src="./Registration.js"></script>
+</body>
+</html>

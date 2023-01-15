@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/Publication Form.css">
+    <title>Blog / Publication Form</title>
+</head>
+<body>
+    <header>
+        <div class="lg">
+            <img src="./materials/design/logo.svg" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="#" class="link-head">
+                    <img src="./materials/design/i-user.svg" alt="">
+                    <span>@UserAccountLogin</span>
+                </a>
+            </li>
+            <li>
+                <button class="newpost">Новая запись</button>
+            </li>
+            <li>
+                <a href="#">Выйти</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1>Добавить запись</h1>
+        <form action="" method="post" class="addPost">
+            <label for="Zagol">
+                Заголовок
+                <input type="text" id="Zagol" maxlength="255" required>
+            </label>
+            <label for="Text">
+                Текст
+                <textarea id="Text" required></textarea>
+            </label>
+            <label for="selectCat">
+                Выберите категорию
+                <select name="categ" id="selectCat" required>
+                    <option value="0">Без категории</option>
+                    <option value="1">Без категории1</option>
+                    <option value="2">Без категории2</option>
+                </select>
+            </label>
+            <label for="AddIMG" class="img">
+                <div class="button-img">
+                    <img src="./materials/design/Vector (Stroke).svg" alt="">
+                    Прикрепить файл изображения
+                </div>
+                <input type="file" id="AddIMG" multiple accept="image/*">
+            </label>
+            <input type="submit" class="button-submit">
+        </form>
+    </main>
+    <footer>
+        <ul class="categories-list">
+            <li class="link"><a href="#">Об авторе</a></li>
+            <li class="link"><a href="#">Технологии</a></li>
+        </ul>
+        <span>
+            © Blog, 2022
+        </span>
+    </footer>
+</body>
+</html>
