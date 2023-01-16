@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/desctope.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Main - 1200px</title>
+</head>
+<body>
+    <div id="app">
+    <header>
+        <div class="lg">
+            <img src="./materials/design/logo.svg" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="#" class="link-head" onclick="event.preventDefault()">
+                    <img src="./materials/design/i-user.svg" alt="">
+                    <span>Войти</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">Зарегистрироваться</a>
+            </li>
+        </ul>
+
+        <div class="Auth-Modal-Overlay">
+            <div class="Modal-Window">
+                <div class="head">
+                    <div class="Title">
+                        <span>Вход</span>                        
+                    </div>
+                        <img src="./materials/design/Close Icon.svg" alt="">
+                </div>
+                <form action="" method="post" class="Form">
+                    <label for="fio">
+                        Логин
+                        <input type="text" id="fio">
+                    </label>
+                    <label for="passord">
+                        Пароль
+                        <input type="password" id="passord">
+                    </label>
+                    <div class="Actions">
+                        <button type="submit">Войти</button>
+                        <a href="#">Забыли пароль?</a>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page">
+            <h1>Последние публикации</h1>
+              <div class="content">
+                <ul class="list">
+                    <li v-for="list_data in data_info" class="itema">
+                        <img v-bind:src="list_data.image" alt="">
+                        <div class="titel">
+                            <h3>{{list_data.title}}</h3>
+                            <span>{{list_data.intro}}</span>
+                        </div>
+                        <div class="category-id">
+                            <div v-for="label in list_data.labels" class="Label">{{label}}</div>
+                        </div>
+                    </li>
+                    <div class="button">
+                        <button class="add-six">
+                            Загрузить ещё 6
+                        </button>
+                    </div>
+                </ul>
+                <ul class="category-menu">
+                    <h3>Рубрики</h3>
+                    <li><a href="Education">Обучение</a></li>
+                    <li><a href="Career">Карьера</a></li>
+                    <li><a href="Figma">Figma</a></li>
+                    <li><a href="Console">Консоль</a></li>
+                    <li><a href="Git">Git</a></li>
+                    <li><a href="News">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="categories-list">
+            <li class="link"><a href="#">Об авторе</a></li>
+            <li class="link"><a href="#">Технологии</a></li>
+        </ul>
+        <span>
+            © Blog, 2022
+        </span>
+    </footer>
+</div>
+    <script src="./materials/content/Data_list.js"></script>
+    <script src="./materials/content/vue.min.js"></script>
+    <script src="./main_vue.js"></script>
+    <script src="./drag and drop.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
