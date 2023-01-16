@@ -1,0 +1,108 @@
+.Auth-Modal-Overlay{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 76, 144, 0.7);
+}
+
+.Modal-Window{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 200px;
+    left: calc(50% - 480px/2);
+    gap: 28px;
+    width: 480px;
+    height: 394px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(98, 76, 144, 0.5);
+    border-radius: 8px;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Title{
+    padding: 28px 0 0 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: move;
+}
+
+.Title span{
+    font-weight: 777;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.head img{
+    padding: 28px 32px 0 0;
+    cursor: pointer;
+}
+
+form{
+    padding: 0px 32px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.Modal-Window label{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+}
+
+.Modal-Window input{
+    width: 100%;
+    display: flex;
+    padding: 24px 0px 24px 24px;
+    gap: 10px;
+
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+}
+
+.Actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.Actions button{
+    display: flex;
+    width: fit-content;
+    padding: 20px 40px;
+    gap: 10px;
+    border: none;
+    background: #624C90;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.Actions a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #472A85;
+    border: none;
+}
